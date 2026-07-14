@@ -10,7 +10,6 @@ new Elysia()
           origin: Bun.env.WEB
       })
   )
-  .get("/health", () => ({ status: "ok" }))
   .use(menuRoute)
   .listen({
       port,
