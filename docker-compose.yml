@@ -5,8 +5,6 @@ services:
       dockerfile: Dockerfile
     container_name: tavrika-api
     restart: unless-stopped
-    env_file:
-      - .env
     environment:
       PORT: 3000
     ports:
